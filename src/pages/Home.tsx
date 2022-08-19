@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import MyComponent from "../../lib/index"
 
 type HomeProps = {
   name: string,
@@ -16,6 +17,7 @@ function Home() {
 
   return (
     <div className="h-screen bg-gray-100 flex flex-col place-content-center items-center">
+      <MyComponent />
       <h2 className="text-sky-900 text-center text-xl">Boilerplate:</h2>
       <div>
         {props.tech.map((tech, index) => (
