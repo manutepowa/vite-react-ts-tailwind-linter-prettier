@@ -1,6 +1,17 @@
 {
   "version": "0.0.0",
   "name": "client",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/component.umd.cjs",
+  "module": "./dist/component.js",
+  "exports": {
+    ".": {
+      "import": "./dist/component.js",
+      "require": "./dist/component.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

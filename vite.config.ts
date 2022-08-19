@@ -15,6 +15,7 @@ export default defineConfig({
       fileName: "component",
     },
   },
+
   // define: {
   //   "process.env": {},
   //   global: {},

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import MyComponent from "../../lib/index"
+import { MyComponent } from "../../lib/index"
 
 type HomeProps = {
   name: string,
@@ -17,7 +17,7 @@ function Home() {
 
   return (
     <div className="h-screen bg-gray-100 flex flex-col place-content-center items-center">
-      <MyComponent />
+      <MyComponent imageUrl="https://i.picsum.photos/id/439/200/300.jpg?hmac=-995cverChuR_nKZFItxOP38htc5deVMd6ZrKiME55g" />
       <h2 className="text-sky-900 text-center text-xl">Boilerplate:</h2>
       <div>
         {props.tech.map((tech, index) => (
