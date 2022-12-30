@@ -2,7 +2,7 @@ import { Route, Switch } from "wouter"
 import Home from "./pages/Home"
 import "./App.css"
 
-function App(): React.ReactNode {
+function App(): JSX.Element {
   return (
     <Switch>
       <Route path="/" component={Home} />
