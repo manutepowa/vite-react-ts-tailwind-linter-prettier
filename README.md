@@ -1,10 +1,15 @@
 <h1 align="center">Vite 3 - React 18 - Typescript - Tailwind 3 - eslint - prettier</h1>
 
-## Installation
+### Installation
 
 Clone this repo and install all dependencies  
 `npm install`
 
-## Development
-
+### Development
 `npm run dev`
+
+
+### Features
+- eslint
+- prettier
+- routing with wouter
