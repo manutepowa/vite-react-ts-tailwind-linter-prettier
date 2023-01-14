@@ -13,3 +13,20 @@ Clone this repo and install all dependencies
 - eslint
 - prettier
 - routing with wouter
+
+## Remove hash from files on build
+```js
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
+      }
+    }
+  }
+})
+```
