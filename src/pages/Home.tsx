@@ -9,7 +9,7 @@ function Home() {
   const [counter, setCounter] = useState<number>(0)
 
   const props: HomeProps = {
-    name: "<manutepowa />",
+    name: "With ❤️ by <manutepowa />",
     tech: [
       "Vite 6",
       "React",
@@ -19,7 +19,6 @@ function Home() {
       "Prettier",
     ],
   }
-  const name = "<manutepowa />"
 
   return (
     <div className="h-screen bg-gray-100 flex flex-col place-content-center items-center">
@@ -38,7 +37,7 @@ function Home() {
         <button onClick={() => setCounter((prev) => prev + 1)}>👆</button>
       </div>
 
-      <p className="text-sky-900 font-extralight">By {name}</p>
+      <p className="text-sky-900 font-extralight">{props.name}</p>
     </div>
   )
 }
