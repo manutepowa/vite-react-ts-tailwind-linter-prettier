@@ -10,13 +10,21 @@ function Home() {
 
   const props: HomeProps = {
     name: "<manutepowa />",
-    tech: ["Vite 3", "React", "Tailwind", "TypeScript", "Eslint", "Prettier"],
+    tech: [
+      "Vite 6",
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Eslint",
+      "Prettier",
+    ],
   }
   const name = "<manutepowa />"
 
   return (
     <div className="h-screen bg-gray-100 flex flex-col place-content-center items-center">
       <h2 className="text-sky-900 text-center text-xl">Boilerplate:</h2>
+
       <div>
         {props.tech.map((tech, index) => (
           <span key={tech}>
