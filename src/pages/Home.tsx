@@ -36,7 +36,12 @@ function Home() {
       </div>
       <div className="flex flex-col mb-4 mt-4 border-2 p-4 border-slate-200 rounded-lg animate-fade-in animate-delay-500">
         <div>counter: {counter}</div>
-        <button onClick={() => setCounter((prev) => prev + 1)}>👆</button>
+        <button
+          className="cursor-pointer"
+          onClick={() => setCounter((prev) => prev + 1)}
+        >
+          👆
+        </button>
       </div>
 
       <p className="text-sky-900 font-extralight animate-fade-in animate-delay-700">
