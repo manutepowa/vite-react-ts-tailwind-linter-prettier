@@ -22,10 +22,6 @@ function Home() {
 
   return (
     <div className="h-screen bg-gray-100 flex flex-col place-content-center items-center">
-      <h2 className="text-sky-900 text-center text-xl animate-fade-in animate-delay-100">
-        Boilerplate:
-      </h2>
-
       <div className="animate-fade-in animate-delay-300">
         {props.tech.map((tech, index) => (
           <span key={tech}>
